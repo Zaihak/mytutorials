@@ -3,12 +3,15 @@
 		"monolog/monolog": "1.6.*@dev"
 	},
 	"autoload": {
-		"psr-0": {"Car\\": "src/"},
+		"psr-0": {
+			"Car\\": "src/"
+		},
 		"classmap": [
 			"config"
 		],
 		"files": [
-			"helper/helper.php"
+			"helper/helper.php",
+			"helper/another.php"
 		]
 	}
 }

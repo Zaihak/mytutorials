@@ -9,17 +9,22 @@
 // $log->addWarning('You site has been under attacked!');
 // $log->addError('Stupid Error!');
 
-require "vendor/autoload.php";
+	require "vendor/autoload.php";
 
-use \Car; 
+	use \Car; 
 
-$toyota_car = new Car\Toyota('Belta');
-$nissan_car = new Car\Nissan('AD Van');
-echo $toyota_car->name . "<br />"; 
-echo $nissan_car->name  . "<br />";
+	$toyota_car = new Car\Toyota('Belta');
+	$nissan_car = new Car\Nissan('AD Van');
+	echo $toyota_car->name . "<br />"; 
+	echo $nissan_car->name  . "<br />";
 
-$db = new DB('test');
-echo $db->dbname . "<br />";
-$kyats = Currency_Converter(13000);
-echo $kyats;
+	echo DB::iTest(); 
+	$db = new DB('test');
+	$test = new Test('Thiha');
+	echo $test->test;
+	echo $db->dbname . "<br />";
+	$kyats = Currency_Converter(13000);
+	echo $kyats;
+	echo AnotherFun('Thatoe');
+	foo();
  ?>

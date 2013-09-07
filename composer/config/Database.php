@@ -6,6 +6,10 @@ class DB {
 	public function __construct($dbname) {
 		$this->dbname = $dbname;
 	}
+
+	public static function iTest() {
+		return "Noooo!";
+	}
 }
 
  ?>
