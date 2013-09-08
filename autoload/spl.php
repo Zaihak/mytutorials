@@ -2,7 +2,7 @@
 function autoloadModel($className) {
     $filename = "models/" . $className . ".php";
     if (is_readable($filename)) {
-        require $filename;
+        require $filename; 
     }
 }
  
@@ -24,7 +24,7 @@ spl_autoload_register("autoloadModel");
 spl_autoload_register("autoloadController");
 spl_autoload_register("autoloadConfig");
 
-$catctl = new EelController;
+$catctl = new CatController;
 $dogctl = new DogController;
 $catModel = new CatModel;
 $dogModel = new DogModel;
